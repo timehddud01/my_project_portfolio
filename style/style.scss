@@ -15,8 +15,8 @@ body {
 .nav {
   position: sticky;
   top: 0;
-  padding-inline: 1rem;
-  margin-top: 20px;
+  padding-inline: 4rem;
+  margin-block: 50px;
 
   // background-color: aqua;
 
@@ -71,9 +71,9 @@ body {
 .middle {
   display: grid;
   align-items: center;
-  height: 400px;
+  height: 450px;
   padding-block: 1rem;
-  padding-inline: 1rem;
+  padding-inline: 5rem;
 
   &__wrapper {
     display: grid;
@@ -98,13 +98,17 @@ body {
 .category {
   display: grid;
   justify-content: center;
+  height: 25px;
   font-family: Nunito, sans-serif;
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 500;
-  color: #828980;
+  color: rgb(252 252 245);
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   visibility: hidden;
+  background-color: #854628;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .lottie {
@@ -129,11 +133,24 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(50px, 120px));
     gap: 80px;
     justify-content: center;
-    padding-inline: 80px;
+    margin-inline: 80px;
+    background-color: #854628;
+    border-radius: 16px;
 
     &-anime {
       width: auto;
     }
+  }
+}
+
+.typho {
+  margin-block: 5rem;
+
+  &__head {
+    display: grid;
+    justify-content: center;
+    font-size: 50px;
+    text-transform: capitalize;
   }
 }
 
