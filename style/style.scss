@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap';
 
 * {
   box-sizing: border-box;
@@ -135,7 +136,8 @@ body {
     justify-content: center;
     margin-inline: 80px;
     background-color: #854628;
-    border-radius: 16px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 
     &-anime {
       width: auto;
@@ -143,14 +145,33 @@ body {
   }
 }
 
+.middle2 {
+  display: grid;
+  justify-content: center;
+}
+
 .typho {
+  // display: grid;
+
+  //justify-content: center;
   margin-block: 5rem;
 
   &__head {
     display: grid;
     justify-content: center;
+    padding-top: 100px;
     font-size: 50px;
     text-transform: capitalize;
+    border-top: 1px solid #828980;
+  }
+
+  &__main {
+    width: 900px;
+    margin-top: 40px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-weight: 500;
+    line-height: 300%;
+    text-align: center;
   }
 }
 
