@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap';
 * {
   box-sizing: border-box;
   margin: 0;
@@ -62,6 +63,7 @@ body {
   display: grid;
   align-items: center;
   height: 400px;
+  padding-block: 1rem;
   padding-inline: 1rem;
 }
 .middle__wrapper {
@@ -83,20 +85,40 @@ body {
   border-radius: 50%;
 }
 
+.category {
+  display: grid;
+  justify-content: center;
+  font-family: Nunito, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #828980;
+  text-align: center;
+  text-transform: uppercase;
+  visibility: hidden;
+}
+
+.lottie {
+  display: block;
+  width: 120px;
+  aspect-ratio: 500/500;
+  margin-inline: auto;
+}
+.lottie:hover + .category {
+  visibility: visible;
+}
+
 .main {
   display: grid;
 }
 .main__grid {
   display: grid;
-  grid-template-columns: auto repeat(5, 100px) auto;
-  gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 120px));
+  gap: 80px;
+  justify-content: center;
+  padding-inline: 80px;
 }
-
-.lottie {
-  display: block;
-  width: 100px;
-  aspect-ratio: 500/500;
-  margin-inline: auto;
+.main__grid-anime {
+  width: auto;
 }
 
 .footer {
