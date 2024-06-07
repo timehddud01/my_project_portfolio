@@ -1,7 +1,6 @@
 @import 'https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap';
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
 }
 
@@ -15,6 +14,7 @@ body {
   position: sticky;
   top: 0;
   padding-inline: 1rem;
+  margin-top: 10px;
 }
 .nav__wrapper {
   display: grid;
@@ -55,12 +55,44 @@ body {
 }
 
 .middle {
-  padding-block: 4rem;
+  padding-block: 1rem;
   padding-inline: 1rem;
+}
+.middle__wrapper {
+  display: grid;
+  grid-template-columns: 12px auto 12px;
+}
+
+.side {
+  display: grid;
+  gap: 5px;
+  padding-block: 4rem;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  background-color: #828980;
+  border-radius: 50%;
+}
+
+.main {
+  display: grid;
+}
+.main__grid {
+  display: grid;
+  grid-template-columns: auto repeat(5, 100px) auto;
+  gap: 12px;
+}
+
+.lottie {
+  display: block;
+  width: 50px;
+  aspect-ratio: 500/500;
+  margin-inline: auto;
 }
 
 .footer {
   padding-block: 5rem;
   padding-inline: 1.5rem;
-  background-color: aqua;
 }

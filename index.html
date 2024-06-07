@@ -6,6 +6,11 @@
     <title>Portfolio_web_KDY</title>
     <link rel="stylesheet" href="./style/style.css" />
     <script src="./script/script.js" defer></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script> -->
   </head>
   <body>
     <nav class="nav">
@@ -45,9 +50,79 @@
     </nav>
     <div class="middle">
       <div class="middle__wrapper">
-        <div class="side">/</div>
-        <div class="main">Heoollo</div>
-        <div class="side">/</div>
+        <div class="side">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+        <div class="main">
+          <div class="main__grid">
+            <div></div>
+            <dotlottie-player
+              id="lottie_1"
+              class="lottie"
+              src="./assets/lottie-downloded.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></dotlottie-player>
+            <dotlottie-player
+              id="lottie_1"
+              class="lottie"
+              src="./assets/lottie-downloded.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></dotlottie-player>
+            <dotlottie-player
+              id="lottie_1"
+              class="lottie"
+              src="./assets/lottie-downloded.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></dotlottie-player>
+            <dotlottie-player
+              id="lottie_1"
+              class="lottie"
+              src="./assets/lottie-downloded.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></dotlottie-player>
+            <dotlottie-player
+              id="lottie_1"
+              class="lottie"
+              src="./assets/lottie-downloded.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></dotlottie-player>
+            <div></div>
+            <!-- <script>
+              LottieInteractivity.create({
+                player: '#lottie_1',
+                mode: 'cursor',
+                actions: [
+                  {
+                    type: 'hover',
+                    forceFlag: false,
+                  },
+                ],
+              });
+            </script> -->
+          </div>
+        </div>
+        <div class="side">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
       </div>
     </div>
     <footer class="footer">
