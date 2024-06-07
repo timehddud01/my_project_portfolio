@@ -64,7 +64,9 @@ body {
 }
 
 .middle {
-  padding-block: 1rem;
+  display: grid;
+  align-items: center;
+  height: 300px;
   padding-inline: 1rem;
 
   &__wrapper {
@@ -75,8 +77,9 @@ body {
 
 .side {
   display: grid;
+  grid-template-rows: auto repeat(3, 12px) auto;
   gap: 5px;
-  padding-block: 4rem;
+  align-items: center;
 }
 
 .circle {
@@ -92,7 +95,7 @@ body {
   &__grid {
     display: grid;
     grid-template-columns: auto repeat(5, 100px) auto;
-    gap: 12px;
+    gap: 100px;
   }
 }
 
@@ -101,7 +104,7 @@ body {
   display: block;
 
   // grid-template-columns: subgrid;
-  width: 50px;
+  width: 100px;
   aspect-ratio: 500/500;
   margin-inline: auto;
 }
