@@ -381,3 +381,10 @@ body {
 
   // text-decoration: underline;
 }
+
+.logo2 {
+  grid-column: 3/4;
+  place-self: center end;
+  height: 28px;
+  opacity: 0.7;
+}
