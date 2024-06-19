@@ -40,10 +40,10 @@ body {
 // }
 
 .nav {
-  position: fixed;
+  position: sticky;
   top: 0%;
-  z-index: 999;
-  width: 100vw;
+  z-index: 5;
+  width: 100%;
   padding-block: 20px;
   padding-inline: 4rem;
   background-color: rgb(252 252 245);
@@ -102,10 +102,9 @@ body {
 .middle {
   display: grid;
   align-items: center;
-  height: 450px;
-  padding-block: 1rem;
+  min-height: 550px;
   padding-inline: 5rem;
-  margin-top: 130px;
+  margin-top: 0;
   margin-bottom: 120px;
 
   &__wrapper {
@@ -186,7 +185,7 @@ body {
 .main2 {
   position: relative;
   display: block;
-  max-width: 1440px;
+  max-width: 1200px;
   aspect-ratio: 55/34;
   margin-inline: auto;
 
@@ -208,13 +207,16 @@ body {
 .mid3 {
   position: absolute;
   z-index: 2;
-  display: block;
+
+  //display: block;
   place-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
-  padding-block: 80px;
-  padding-inline: 112px;
+  height: 90%;
+  padding-inline: 40px;
+  margin-top: 30px;
+
+  //padding-inline: 112px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-padding-block: 80px;
@@ -222,13 +224,22 @@ body {
   // background-color: rgb(235 235 225 / 38.9%);
 
   &__wrapper {
-    scroll-snap-align: start;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 100%;
+    max-height: 100vh;
+    margin-bottom: 80px;
+  }
+
+  &__wrapper2 {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 40px;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100vh;
     margin-bottom: 80px;
   }
 }
@@ -237,9 +248,11 @@ body {
   background-color: aquamarine;
 
   &__head {
-    z-index: 2;
+    z-index: 3;
+
+    //height: 320px;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 500;
     color: #242223;
   }
@@ -247,7 +260,7 @@ body {
   &__head2 {
     z-index: 2;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 10rem;
+    font-size: 4rem;
     font-weight: 500;
     line-height: normal;
     color: #242223;
@@ -258,15 +271,17 @@ body {
   position: absolute;
   display: grid;
   grid-template-columns: 21fr 34fr;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+
+  //justify-self: center;
+  width: 90%;
+  height: 90%;
 
   // max-width: 1265px;
   // max-height: 782px;
   aspect-ratio: 55/34;
-  padding-block: 49px;
-  padding-inline: 80px;
+  padding-block: 34px;
+  padding-inline: 55px;
+  margin-left: 55px;
 
   // border-top: 2px solid rgb(0 0 0 / 30%);
   border-block: 1px solid rgb(0 0 0 / 30%);
