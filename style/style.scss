@@ -152,6 +152,8 @@ body {
   aspect-ratio: 500/500;
   margin-inline: auto;
 
+  // margin-top: 50px;
+
   &:hover + .category {
     visibility: visible;
   }
@@ -178,6 +180,7 @@ body {
 
     &-anime {
       width: auto;
+      padding-top: 50px;
     }
   }
 }
