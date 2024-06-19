@@ -174,7 +174,7 @@ body {
   0% {
     opacity: 0;
   }
-  100% {
+  60% {
     opacity: 1;
   }
 }
@@ -192,17 +192,22 @@ body {
   scroll-snap-type: y mandatory;
 }
 .mid3__wrapper {
-  scroll-snap-align: start;
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(290px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-rows: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 40px;
   max-width: 100%;
   max-height: 100vh;
+  padding-top: 20px;
   margin-bottom: 80px;
+  scroll-snap-align: start;
 }
 
 .card {
+  width: 100%;
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-color: aquamarine;
 }
 .card__head {
@@ -211,6 +216,7 @@ body {
   font-size: 6rem;
   font-weight: 500;
   color: #242223;
+  text-shadow: 0 2px 3px rgb(252, 252, 245);
 }
 .card__head2 {
   z-index: 2;
@@ -227,13 +233,14 @@ body {
   font-weight: 500;
   line-height: normal;
   color: #242223;
+  text-shadow: 2px 0 3px rgb(252, 252, 245);
 }
 .card__head4 {
   z-index: 2;
   font-family: "Red Hat Display", sans-serif;
   font-size: 4rem;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 120%;
   color: #242223;
   text-align: start;
 }
